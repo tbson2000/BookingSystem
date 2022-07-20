@@ -1,11 +1,15 @@
 import mongoose from 'mongoose';
 
-const RoomSchema = new mongoose.Schema({
+const SessionSchema = new mongoose.Schema({
     title:{
         type: String,
         required:true,
     },
     price:{
+        type: Number,
+        required:true,
+    },
+    duration:{
         type: Number,
         required:true,
     },
@@ -17,8 +21,8 @@ const RoomSchema = new mongoose.Schema({
         type: String,
         required:true,
     },
-    roomNumbers:[{number:Number, unavailableDates:{type: [Date]}}],
+    sessionInfo:[{name:String, unavailableDates:{type: [Date]}}],
 },
 {timestamps: true});
 
-export default mongoose.model("Room", RoomSchema)
+export default mongoose.model("Session", SessionSchema)
