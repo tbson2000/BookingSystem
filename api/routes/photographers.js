@@ -1,5 +1,5 @@
 import express from "express";
-import { createPhotographer,
+import { countByCity, createPhotographer,
          deletePhotographer, 
          getPhotographer, 
          getPhotographers, 
@@ -22,5 +22,8 @@ router.get("/:id", getPhotographer);
 //GET ALL
 
 router.get("/", getPhotographers)
+
+router.get("/countByCity", countByCity);
+router.get("/countByType", getPhotographers)
 
 export default router
