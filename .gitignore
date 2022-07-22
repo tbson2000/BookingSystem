@@ -1,3 +1,4 @@
 
 api/node_modules/.bin/is-ci
 client/package-lock.json
+admin/package-lock.json
