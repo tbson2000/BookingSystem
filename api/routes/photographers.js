@@ -1,5 +1,5 @@
 import express from "express";
-import { countByCity, createPhotographer,
+import { countByCity, countByRating, createPhotographer,
          deletePhotographer, 
          getPhotographer, 
          getPhotographers, 
@@ -18,12 +18,13 @@ router.put("/:id",verifyAdmin, updatedPhotographer);
 router.delete("/:id",verifyAdmin, deletePhotographer);
 //GET
 
-router.get("/:id", getPhotographer);
+router.get("/find/:id", getPhotographer);
 //GET ALL
 
 router.get("/", getPhotographers)
 
 router.get("/countByCity", countByCity);
-router.get("/countByType", getPhotographers)
-
+router.get("/countByType", getPhotographers);
+router.get("/countByRating",countByRating);
+router.get("/countBySession");
 export default router

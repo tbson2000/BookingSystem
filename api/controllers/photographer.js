@@ -70,3 +70,29 @@ export const countByCity = async (req,res,next) =>{
         next(err);
     }
 }
+//  ratting count
+export const countByRating = async (req,res,next) =>{
+    const  rating =  req.query.rating.split(",")
+    try {
+        const list = Promise.all(rating.map(rate =>{
+            return photographer.countDocuments({rating:rate})
+        }))
+        
+        res.status(200).json(list)
+    } catch (err) {
+        next(err);
+    }
+}
+// count photographer by sessions
+export const countBySession = async (req,res,next) =>{
+    const sessions =  req.query.sessions.split(",")
+    try{
+        const list = Promise.all(sessions.map(session =>{
+            return photographer.countDocuments({session:session})
+        }))
+    }
+    catch(err){
+        next(err)
+    }
+
+}
