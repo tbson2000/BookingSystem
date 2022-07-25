@@ -56,7 +56,7 @@ const List = () => {
               <div className="lsOptions">
                 <div className="lsOptionItem">
                   <span className="lsOptionText">
-                    Min price <small>per night</small>
+                    Min price <small>per session</small>
                   </span>
                   <input
                     type="number"
@@ -66,7 +66,7 @@ const List = () => {
                 </div>
                 <div className="lsOptionItem">
                   <span className="lsOptionText">
-                    Max price <small>per night</small>
+                    Max price <small>per session</small>
                   </span>
                   <input
                     type="number"

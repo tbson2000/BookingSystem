@@ -86,11 +86,11 @@ const Header = ({ type }) => {
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              A lifetime of discounts? It's Genius.
+              Specialized Explore Booking Platform.
             </h1>
             <p className="headerDesc">
-              Get rewarded for your travels – unlock instant savings of 10% or
-              more with a free Lamabooking account
+              Get rewarded for your albums – unlock discount of 10% or
+              more with a free Photo Session account
             </p>
             {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
@@ -98,7 +98,7 @@ const Header = ({ type }) => {
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
                 <input
                   type="text"
-                  placeholder="Where are you going?"
+                  placeholder="What can we help?"
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}
                 />
