@@ -1,8 +1,8 @@
 # BookingSystem
 
 RUN THE 3 COMMAND:
-  yarn
-  yarn install
+  yarn , 
+  yarn install , 
   yarn start
 
 Optional:
