@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
-import SearchItem from "../../components/searchItem/SearchItem";
+import {SearchItem, SearchItem2, SearchItem3, SearchItem4, SearchItem5, SearchItem6} from "../../components/searchItem/SearchItem";
 // import useFetch from "../../hooks/useFetch";
 
 const List = () => {
@@ -121,14 +121,11 @@ const List = () => {
           </div> */}
           <div className="listResult">
             <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
-            <SearchItem />
+            <SearchItem2 />
+            <SearchItem3 />
+            <SearchItem4 />
+            <SearchItem5 />
+            <SearchItem6 />
           </div>
         </div>
       </div>
