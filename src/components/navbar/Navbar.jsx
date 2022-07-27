@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <Link to="/" style={{ fontFamily: "Montserrat, sans-serif", color: "inherit", textDecoration: "none" }}>
+        <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
           <span className="logo">Photo Session</span>
         </Link>
         {/* {user ? user.username : (

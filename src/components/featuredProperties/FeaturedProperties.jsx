@@ -11,7 +11,7 @@ const FeaturedProperties = () => {
           className="fpImg"
         />
         <span className="fpName">Marco</span>
-        <span className="fpCity">Madrid</span>
+        <span className="fpCity">Hanoi</span>
         <span className="fpPrice">Starting from $120</span>
         <div className="fpRating">
           <button>8.9</button>
@@ -26,7 +26,7 @@ const FeaturedProperties = () => {
           className="fpImg"
         />
         <span className="fpName">Carissa</span>
-        <span className="fpCity">Austin</span>
+        <span className="fpCity">Ho Chi Minh</span>
         <span className="fpPrice">Starting from $140</span>
         <div className="fpRating">
           <button>9.3</button>
@@ -41,7 +41,7 @@ const FeaturedProperties = () => {
           className="fpImg"
         />
         <span className="fpName">Jerry</span>
-        <span className="fpCity">Lisbon</span>
+        <span className="fpCity">Da Nang</span>
         <span className="fpPrice">Starting from $99</span>
         <div className="fpRating">
           <button>8.8</button>
@@ -56,7 +56,7 @@ const FeaturedProperties = () => {
           className="fpImg"
         />
         <span className="fpName">Theresa</span>
-        <span className="fpCity">Berlin</span>
+        <span className="fpCity">Hanoi</span>
         <span className="fpPrice">Starting from $105</span>
         <div className="fpRating">
           <button>8.9</button>

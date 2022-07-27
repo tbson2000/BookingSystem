@@ -1,5 +1,6 @@
 import {
   faBed,
+  faCameraRetro,
   faCalendarDays,
   faCar,
   faPerson,
@@ -85,17 +86,16 @@ const Header = ({ type }) => {
         {type !== "list" && (
           <>
             <h1 className="headerTitle">
-              Specialized Explore Booking Platform.
+              Specialized Explore Booking Platform
             </h1>
             <p className="headerDesc">
-              Get rewarded for your albums – unlock discount of 10% or
-              more with a free Photo Session account
+              Get rewarded for first your album - unlock discount of 10% or more with a free Photo Session account
             </p>
             {/* {!user && <button className="headerBtn">Sign in / Register</button>} */}
             <button className="headerBtn">Sign in / Register</button>
             <div className="headerSearch">
-              <div className="headerSearchItem">
-                <FontAwesomeIcon icon={faBed} className="headerIcon" />
+              <div className="">
+                <FontAwesomeIcon icon={faCameraRetro} className="headerIcon" />
                 <input
                   type="text"
                   placeholder="What can we help?"
@@ -118,6 +118,7 @@ const Header = ({ type }) => {
                     onChange={(item) => setDates([item.selection])}
                     moveRangeOnFirstSelection={false}
                     ranges={dates}
+                    rangeColors={['#FBBA46']}
                     className="date"
                     minDate={new Date()}
                   />
