@@ -50,17 +50,17 @@ const SearchItem2 = () => {
     <div className="searchItem2">
       <img
         // src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
-        src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+        src="https://www.datocms-assets.com/56778/1635523352-1634721749411298-20212010-annie-leibovitz.jpeg?auto64=Zm9ybWF0LGNvbXByZXNz&cs=srgb"
         alt=""
         className="siImg"
       />
 
       <div className="siDesc">
-        <h1 className="siTitle">Photographer 2</h1>
+        <h1 className="siTitle">Annie Leibovitz</h1>
         <span className="siDistance">72 years old</span>
         {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          34 years of experience
+          36 years of experience
         </span>
         {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
@@ -93,17 +93,17 @@ const SearchItem3 = () => {
     <div className="searchItem3">
       <img
         // src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
-        src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+        src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQAL0y9TiHDIy9H4jokRnrMhqHhTewfFhCmvF5QD6vtcFw7GAYt9e7HZEx8Qwls2xWl"
         alt=""
         className="siImg"
       />
 
       <div className="siDesc">
-        <h1 className="siTitle">Photographer 3</h1>
-        <span className="siDistance">72 years old</span>
+        <h1 className="siTitle">Elliott Erwitt</h1>
+        <span className="siDistance">94 years old</span>
         {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          34 years of experience
+          56 years of experience
         </span>
         {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
@@ -136,7 +136,7 @@ const SearchItem4 = () => {
     <div className="searchItem4">
       <img
         // src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
-        src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+        src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9a7y0D_ulLJkESsht0iHOtEgEu_DQzxdVZ8OqtJK22CcU6GtG"
         alt=""
         className="siImg"
       />
@@ -179,17 +179,17 @@ const SearchItem5 = () => {
     <div className="searchItem5">
       <img
         // src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
-        src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+        src="http://totallyhistory.com/wp-content/uploads/2013/12/David-Bailey-2.jpg"
         alt=""
         className="siImg"
       />
 
       <div className="siDesc">
-        <h1 className="siTitle">Photographer 5</h1>
-        <span className="siDistance">72 years old</span>
+        <h1 className="siTitle">David Bailey</h1>
+        <span className="siDistance">84 years old</span>
         {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          34 years of experience
+          47 years of experience
         </span>
         {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
@@ -222,17 +222,17 @@ const SearchItem6 = () => {
     <div className="searchItem6">
       <img
         // src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
-        src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+        src="https://www.nationalgeographic.com/content/dam/expeditions/experts/expert-ami-vitale.ngsversion.1530212855456.adapt.1900.1.jpg"
         alt=""
         className="siImg"
       />
 
       <div className="siDesc">
-        <h1 className="siTitle">Photographer 6</h1>
-        <span className="siDistance">72 years old</span>
+        <h1 className="siTitle">Ami Vitale</h1>
+        <span className="siDistance">51 years old</span>
         {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          34 years of experience
+          29 years of experience
         </span>
         {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
