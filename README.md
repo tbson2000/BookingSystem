@@ -5,7 +5,12 @@ Run the following cmd in the project directory:
   yarn , 
   yarn install , 
   yarn start
-  
+
+In case you have an error related to execution policies which is unable to run scripts:
+  Step 1: run Powershell with Run As Administrator
+  Step 2: enter 'set-executionpolicy remotesigned'
+  Step 3: press 'y' and enter (Basically saying yes)
+
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
