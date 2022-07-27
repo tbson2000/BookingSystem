@@ -1,6 +1,7 @@
 # BookingSystem
 
-RUN THE 3 COMMAND:
+RUN THE 3 COMMANDS in root folder:
+  npm i yarn ,
   yarn , 
   yarn install , 
   yarn start
