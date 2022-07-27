@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 .navbar{
   height: 50px;
   background-color: #766E6B;
   display: flex;
   justify-content: center;
+  font-family: "Montserrat, sans-serif"
 }
 
 .navContainer{
@@ -24,4 +27,5 @@
   padding: 5px 10px;
   cursor: pointer;
   color: #766E6B;
+  border-radius: 2px;
 }
