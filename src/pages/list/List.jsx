@@ -34,7 +34,7 @@ const List = () => {
           <div className="listSearch">
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
-              <label>Destination</label>
+              <label>Photographer Name</label>
               <input placeholder={destination} type="text" />
             </div>
             <div className="lsItem">
@@ -77,7 +77,7 @@ const List = () => {
                   /> */}
                   <input type="number" className="lsOptionInput" />
                 </div>
-                <div className="lsOptionItem">
+                {/* <div className="lsOptionItem">
                   <span className="lsOptionText">Adult</span>
                   <input
                     type="number"
@@ -103,7 +103,7 @@ const List = () => {
                     className="lsOptionInput"
                     placeholder={options.room}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             {/* <button onClick={handleClick}>Search</button> */}

@@ -6,21 +6,21 @@ const SearchItem = () => {
     <div className="searchItem">
       <img
         // src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
-        src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+        src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTyQ4GN0YgGkjB7YLK-dcAczYTbtpZ6ErcOYnsB8gIzv6YZy8I0I7Y8Qw9KkhKAj6Ee"
         alt=""
         className="siImg"
       />
 
       <div className="siDesc">
-        <h1 className="siTitle">Photographer 1</h1>
-        <span className="siDistance">500m from center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <h1 className="siTitle">Steve McCurry</h1>
+        <span className="siDistance">72 years old</span>
+        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          Studio Apartment with Air conditioning
+          34 years of experience
         </span>
-        <span className="siFeatures">
+        {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
-        </span>
+        </span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -57,14 +57,14 @@ const SearchItem2 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Photographer 2</h1>
-        <span className="siDistance">500m from center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <span className="siDistance">72 years old</span>
+        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          Studio Apartment with Air conditioning
+          34 years of experience
         </span>
-        <span className="siFeatures">
+        {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
-        </span>
+        </span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -100,14 +100,14 @@ const SearchItem3 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Photographer 3</h1>
-        <span className="siDistance">500m from center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <span className="siDistance">72 years old</span>
+        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          Studio Apartment with Air conditioning
+          34 years of experience
         </span>
-        <span className="siFeatures">
+        {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
-        </span>
+        </span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -143,14 +143,14 @@ const SearchItem4 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Photographer 4</h1>
-        <span className="siDistance">500m from center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <span className="siDistance">72 years old</span>
+        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          Studio Apartment with Air conditioning
+          34 years of experience
         </span>
-        <span className="siFeatures">
+        {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
-        </span>
+        </span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -186,14 +186,14 @@ const SearchItem5 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Photographer 5</h1>
-        <span className="siDistance">500m from center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <span className="siDistance">72 years old</span>
+        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          Studio Apartment with Air conditioning
+          34 years of experience
         </span>
-        <span className="siFeatures">
+        {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
-        </span>
+        </span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -229,14 +229,14 @@ const SearchItem6 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Photographer 6</h1>
-        <span className="siDistance">500m from center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <span className="siDistance">72 years old</span>
+        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
-          Studio Apartment with Air conditioning
+          34 years of experience
         </span>
-        <span className="siFeatures">
+        {/* <span className="siFeatures">
           Entire studio • 1 bathroom • 21m² 1 full bed
-        </span>
+        </span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!

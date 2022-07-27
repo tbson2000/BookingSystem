@@ -8,6 +8,10 @@
   margin-bottom: 20px;
 }
 
+.siImg {
+  border-radius: 50%;
+}
+
 .searchItem2 {
   border: 1px solid lightgray;
   padding: 10px;
