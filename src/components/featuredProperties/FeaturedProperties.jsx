@@ -5,12 +5,11 @@ const FeaturedProperties = () => {
     <div className="fp">
       <div className="fpItem">
         <img
-          // src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=e148feeb802ac3d28d1391dad9e4cf1e12d9231f897d0b53ca067bde8a9d3355&o=&s=1"
-          src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+          src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTyQ4GN0YgGkjB7YLK-dcAczYTbtpZ6ErcOYnsB8gIzv6YZy8I0I7Y8Qw9KkhKAj6Ee"
           alt=""
-          className="fpImg"
+          className="siImg"
         />
-        <span className="fpName">Marco</span>
+        <span className="fpName">Steve McCurry</span>
         <span className="fpCity">Hanoi</span>
         <span className="fpPrice">Starting from $120</span>
         <div className="fpRating">
@@ -20,12 +19,11 @@ const FeaturedProperties = () => {
       </div>
       <div className="fpItem">
         <img
-          // src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/215955381.jpg?k=ff739d1d9e0c8e233f78ee3ced82743ef0355e925df8db7135d83b55a00ca07a&o=&hp=1"
-          src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+          src="https://www.datocms-assets.com/56778/1635523352-1634721749411298-20212010-annie-leibovitz.jpeg?auto64=Zm9ybWF0LGNvbXByZXNz&cs=srgb"
           alt=""
-          className="fpImg"
+          className="siImg"
         />
-        <span className="fpName">Carissa</span>
+        <span className="fpName">Annie Leibovitz</span>
         <span className="fpCity">Ho Chi Minh</span>
         <span className="fpPrice">Starting from $140</span>
         <div className="fpRating">
@@ -35,12 +33,12 @@ const FeaturedProperties = () => {
       </div>
       <div className="fpItem">
         <img
-          // src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/232902339.jpg?k=3947def526b8af0429568b44f9716e79667d640842c48de5e66fd2a8b776accd&o=&hp=1"
-          src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+
+          src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQAL0y9TiHDIy9H4jokRnrMhqHhTewfFhCmvF5QD6vtcFw7GAYt9e7HZEx8Qwls2xWl"
           alt=""
-          className="fpImg"
+          className="siImg  "
         />
-        <span className="fpName">Jerry</span>
+        <span className="fpName">Elliott Erwitt</span>
         <span className="fpCity">Da Nang</span>
         <span className="fpPrice">Starting from $99</span>
         <div className="fpRating">
@@ -50,12 +48,12 @@ const FeaturedProperties = () => {
       </div>
       <div className="fpItem">
         <img
-          // src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/322658536.jpg?k=3fffe63a365fd0ccdc59210188e55188cdb7448b9ec1ddb71b0843172138ec07&o=&hp=1"
-          src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+
+          src="https://www.nationalgeographic.com/content/dam/expeditions/experts/expert-ami-vitale.ngsversion.1530212855456.adapt.1900.1.jpg"
           alt=""
-          className="fpImg"
+          className="siImg"
         />
-        <span className="fpName">Theresa</span>
+        <span className="fpName">Ami Vitale</span>
         <span className="fpCity">Hanoi</span>
         <span className="fpPrice">Starting from $105</span>
         <div className="fpRating">
