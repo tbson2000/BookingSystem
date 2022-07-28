@@ -55,6 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 10em;
   padding: 10px 0px;
   border-radius: 5px;
   position: absolute;
