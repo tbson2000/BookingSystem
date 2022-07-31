@@ -13,13 +13,13 @@ const SearchItem = () => {
       <div className="siDesc">
         <h1 className="siTitle">Steve McCurry</h1>
         <span className="siDistance">51 years old</span>
-        {/* <span className="siTaxiOp">Free airport taxi</span> */}
+        <span className="siTaxiOp">Editors' Choice</span>
         <span className="siSubtitle">
           34 years of experience
         </span>
-        {/* <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
-        </span> */}
+        <span className="siFeatures">
+          Sport • Wild & Natural • Landscape
+        </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -56,13 +56,13 @@ const SearchItem2 = () => {
       <div className="siDesc">
         <h1 className="siTitle">Annie Leibovitz</h1>
         <span className="siDistance">62 years old</span>
-        {/* <span className="siTaxiOp">Free airport taxi</span> */}
+        <span className="siTaxiOp">Editors' Choice</span>
         <span className="siSubtitle">
           36 years of experience
         </span>
-        {/* <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
-        </span> */}
+        <span className="siFeatures">
+          Black & White • Portrait • Event
+        </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -98,13 +98,12 @@ const SearchItem3 = () => {
       <div className="siDesc">
         <h1 className="siTitle">Elliott Erwitt</h1>
         <span className="siDistance">84 years old</span>
-        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
           56 years of experience
         </span>
-        {/* <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
-        </span> */}
+        <span className="siFeatures">
+          Landscape • Wild & Natural
+        </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -132,7 +131,6 @@ const SearchItem4 = () => {
   return (
     <div className="searchItem4">
       <img
-        // src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
         src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9a7y0D_ulLJkESsht0iHOtEgEu_DQzxdVZ8OqtJK22CcU6GtG"
         alt=""
         className="siImg"
@@ -141,13 +139,12 @@ const SearchItem4 = () => {
       <div className="siDesc">
         <h1 className="siTitle">Alicia Isabelle</h1>
         <span className="siDistance">52 years old</span>
-        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
           34 years of experience
         </span>
-        {/* <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
-        </span> */}
+        <span className="siFeatures">
+          Event • Sport
+        </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -183,13 +180,12 @@ const SearchItem5 = () => {
       <div className="siDesc">
         <h1 className="siTitle">David Bailey</h1>
         <span className="siDistance">76 years old</span>
-        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
           47 years of experience
         </span>
-        {/* <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
-        </span> */}
+        <span className="siFeatures">
+          Black & White • Portrait
+        </span>
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!
@@ -225,12 +221,11 @@ const SearchItem6 = () => {
       <div className="siDesc">
         <h1 className="siTitle">Ami Vitale</h1>
         <span className="siDistance">51 years old</span>
-        {/* <span className="siTaxiOp">Free airport taxi</span> */}
         <span className="siSubtitle">
           29 years of experience
         </span>
         {/* <span className="siFeatures">
-          Entire studio • 1 bathroom • 21m² 1 full bed
+          E
         </span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">

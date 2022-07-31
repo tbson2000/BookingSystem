@@ -18,33 +18,21 @@ const Photographer = () => {
 
   const photos = [
     {
-      // src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707778.jpg?k=56ba0babbcbbfeb3d3e911728831dcbc390ed2cb16c51d88159f82bf751d04c6&o=&hp=1",
-      // src: "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png",
       src: "https://img.freepik.com/free-photo/landmark-forest-tourism-sunrise-famous-ancient_1417-1194.jpg?size=626&ext=jpg"
     },
     {
-      // src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707367.jpg?k=cbacfdeb8404af56a1a94812575d96f6b80f6740fd491d02c6fc3912a16d8757&o=&hp=1",
-      // src: "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png",
       src:"https://img.freepik.com/free-photo/asian-young-happy-family-enjoy-vacation-beach-evening-dad-mom-kid-relax-playing-together-near-sea-when-sunset-while-travel-holiday-lifestyle-travel-holiday-vacation-summer-concept_7861-2442.jpg?size=626&ext=jpgs"
     },
     {
-      // src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261708745.jpg?k=1aae4678d645c63e0d90cdae8127b15f1e3232d4739bdf387a6578dc3b14bdfd&o=&hp=1",
-      // src: "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png",
       src:"https://img.freepik.com/premium-photo/silhouettes-bride-groom-sunset-reflection-pool_199620-8170.jpg?size=626&ext=jpg"
     },
     {
-      // src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707776.jpg?k=054bb3e27c9e58d3bb1110349eb5e6e24dacd53fbb0316b9e2519b2bf3c520ae&o=&hp=1",
-      // src: "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png",
       src:"https://img.freepik.com/free-photo/studio-portrait-loving-mother-with-blonde-hair-embracing-her-playful-baby-magenta-background-smiling-camera-while-baby-moving-her-hands_132075-11614.jpg?size=626&ext=jpg"
     },
     {
-      // src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261708693.jpg?k=ea210b4fa329fe302eab55dd9818c0571afba2abd2225ca3a36457f9afa74e94&o=&hp=1",
-      // src: "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png",
       src:"https://img.freepik.com/free-photo/indoor-shot-overjoyed-teenage-girl-makes-online-call-via-smartphone-poses-camera-laughs-joyfully-dressed-winter-coat-hat-holds-bunch-helium-balloons-stands-against-pink-background_273609-58781.jpg?size=626&ext=jpg"
     },
     {
-      // src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707389.jpg?k=52156673f9eb6d5d99d3eed9386491a0465ce6f3b995f005ac71abc192dd5827&o=&hp=1",
-      // src: "https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png",
       src:"https://img.freepik.com/free-photo/asian-woman-wearing-vietnam-culture-traditional-strawberry-garden-doi-ang-khang-chiang-mai-thailand_335224-760.jpg?size=626&ext=jpg"
     },
   ];
@@ -94,11 +82,11 @@ const Photographer = () => {
           </div>
         )}
         <div className="photographerWrapper">
-          <button className="bookNow">Reserve or Book Now!</button>
+          <button className="bookNow">Book Now!</button>
           <h1 className="photographerTitle">Steve McCurry</h1>
           <div className="photographerAddress">
             <FontAwesomeIcon icon={faLocationDot} />
-            <span>Cau Giay-Hanoi</span>
+            <span>Cau Giay - Hanoi</span>
           </div>
           <span className="photographerDistance">
             10km away from your position
@@ -135,9 +123,9 @@ const Photographer = () => {
                 Many years of shooting in multiple styple. This photographer will give you the best experiences.
               </span>
               <h2>
-                <b>500$</b> <br /> ( 3 hours-any style)
+                <b>500$</b> <br /> (3 hours-any style)
               </h2> 
-              <button>Reserve or Book Now!</button>
+              <button>Book Now!</button>
             </div>
           </div>
         </div>

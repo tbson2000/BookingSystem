@@ -22,9 +22,8 @@ You may also see any lint errors in the console.
 
 Optional for BE/database:
 
-libs to install:
+libs to install: express -> add type model in package.json
 
-  - express -> add type model in package.json
   - yarn install
   - yarn add nodemon
   - yarn add dotenv
