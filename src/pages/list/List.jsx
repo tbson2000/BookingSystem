@@ -96,12 +96,12 @@ const List = () => {
                   />
                 </div>
                 <div className="lsOptionItem">
-                  <span className="lsOptionText">Room</span>
+                  <span className="lsOptionText">Schedule</span>
                   <input
                     type="number"
                     min={1}
                     className="lsOptionInput"
-                    placeholder={options.room}
+                    placeholder={options.schedule}
                   />
                 </div> */}
               </div>

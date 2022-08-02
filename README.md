@@ -1,5 +1,13 @@
 # BookingSystem
 
+# Changed:
+
+reserve -> book
+
+room -> schedule
+
+
+# Setup
 Run the following cmd in the project directory:
 
   npm i yarn ,
