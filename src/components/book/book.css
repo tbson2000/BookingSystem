@@ -52,7 +52,7 @@
     font-weight: 500;
   }
   
-  .rSelectRooms{
+  .rSelectSchedules{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -60,7 +60,7 @@
     color: gray;
   }
   
-  .room{
+  .schedule{
     display: flex;
     flex-direction: column;
   }

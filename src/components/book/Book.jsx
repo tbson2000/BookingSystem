@@ -9,8 +9,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Book = ({ setOpen, photographerId }) => {
-  const [selectedRooms, setSelectedRooms] = useState([]);
-  const { data, loading, error } = useFetch(`/photographers/room/${photographerId}`);
+  const [selectedSchedules, setSelectedSchedules] = useState([]);
+  const { data, loading, error } = useFetch(`/photographers/schedule/${photographerId}`);
   const { dates } = useContext(SearchContext);
 
   const getDatesInRange = (startDate, endDate) => {
@@ -31,8 +31,8 @@ const Book = ({ setOpen, photographerId }) => {
 
   const alldates = getDatesInRange(dates[0].startDate, dates[0].endDate);
 
-  const isAvailable = (roomNumber) => {
-    const isFound = roomNumber.unavailableDates.some((date) =>
+  const isAvailable = (scheduleNumber) => {
+    const isFound = scheduleNumber.unavailableDates.some((date) =>
       alldates.includes(new Date(date).getTime())
     );
 
@@ -42,10 +42,10 @@ const Book = ({ setOpen, photographerId }) => {
   const handleSelect = (e) => {
     const checked = e.target.checked;
     const value = e.target.value;
-    setSelectedRooms(
+    setSelectedSchedules(
       checked
-        ? [...selectedRooms, value]
-        : selectedRooms.filter((item) => item !== value)
+        ? [...selectedSchedules, value]
+        : selectedSchedules.filter((item) => item !== value)
     );
   };
 
@@ -54,8 +54,8 @@ const Book = ({ setOpen, photographerId }) => {
   const handleClick = async () => {
     try {
       await Promise.all(
-        selectedRooms.map((roomId) => {
-          const res = axios.put(`/rooms/availability/${roomId}`, {
+        selectedSchedules.map((scheduleId) => {
+          const res = axios.put(`/schedules/availability/${scheduleId}`, {
             dates: alldates,
           });
           return res.data;
@@ -73,7 +73,7 @@ const Book = ({ setOpen, photographerId }) => {
           className="rClose"
           onClick={() => setOpen(false)}
         />
-        <span>Select your rooms:</span>
+        <span>Select your schedules:</span>
         {data.map((item) => (
           <div className="rItem" key={item._id}>
             <div className="rItemInfo">
@@ -84,15 +84,15 @@ const Book = ({ setOpen, photographerId }) => {
               </div>
               <div className="rPrice">{item.price}</div>
             </div>
-            <div className="rSelectRooms">
-              {item.roomNumbers.map((roomNumber) => (
-                <div className="room">
-                  <label>{roomNumber.number}</label>
+            <div className="rSelectSchedules">
+              {item.scheduleNumbers.map((scheduleNumber) => (
+                <div className="schedule">
+                  <label>{scheduleNumber.number}</label>
                   <input
                     type="checkbox"
-                    value={roomNumber._id}
+                    value={scheduleNumber._id}
                     onChange={handleSelect}
-                    disabled={!isAvailable(roomNumber)}
+                    disabled={!isAvailable(scheduleNumber)}
                   />
                 </div>
               ))}
