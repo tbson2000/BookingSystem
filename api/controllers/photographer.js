@@ -115,7 +115,7 @@ export const getPhotographerSessions = async (req,res,next)=>{
         const list = await Promise.all(photographer.sessions.map(session=>{
             return Session.findById(session)
         }))
-        res.status(200).json(list)
+        res.status(200).json
     } catch (err) {
         next(err)
     }
