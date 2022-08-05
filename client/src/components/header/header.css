@@ -1,5 +1,5 @@
 .header {
-  background-color: #003580;
+  background-color: #766E6B;
   color: white;
   display: flex;
   justify-content: center;
@@ -39,21 +39,23 @@
 }
 
 .headerBtn {
-  background-color: #0071c2;
+  background-color: #FBBA46;
   color: white;
   font-weight: 500;
   border: none;
   padding: 10px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .headerSearch {
   height: 30px;
   background-color: white;
-  border: 3px solid #febb02;
+  border: 3px solid #FBBA46;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 10em;
   padding: 10px 0px;
   border-radius: 5px;
   position: absolute;
@@ -117,8 +119,8 @@
 .optionCounterButton {
   width: 30px;
   height: 30px;
-  border: 1px solid #0071c2;
-  color: #0071c2;
+  border: 1px solid #FBBA46;
+  color: #FBBA46;
   cursor: pointer;
   background-color: white;
 }

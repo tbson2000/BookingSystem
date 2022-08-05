@@ -1,42 +1,49 @@
+import useFetch from "../../hooks/useFetch";
 import "./featured.css";
 
 const Featured = () => {
+  const { data, loading, error } = useFetch("/photographers/countByCity?cities=hanoi,hcm,nd")
   return (
     <div className="featured">
-      <div className="featuredItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o="
-          alt=""
-          className="featuredImg"
-        />
-        <div className="featuredTitles">
-          <h1>Dublin</h1>
-          <h2>123 properties</h2>
-        </div>
-      </div>
-      
-      <div className="featuredItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o="
-          alt=""
-          className="featuredImg"
-        />
-        <div className="featuredTitles">
-          <h1>Reno</h1>
-          <h2>533 properties</h2>
-        </div>
-      </div>
-      <div className="featuredItem">
-        <img
-          src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o="
-          alt=""
-          className="featuredImg"
-        />
-        <div className="featuredTitles">
-          <h1>Austin</h1>
-          <h2>532 properties</h2>
-        </div>
-      </div>
+      {loading ? (
+        "Loadiung please wait"
+      ) : (
+        <>
+          <div className="featuredItem">
+            <img
+              src="https://media.istockphoto.com/photos/tran-quoc-pagoda-picture-id481045024?k=20&m=481045024&s=612x612&w=0&h=2W86P_TyoaVLYr7MKhJglkGwA3dYXBFi5idBCIfAV_k="
+              alt=""
+              className="featuredImg"
+            />
+            <div className="featuredTitles">
+              <h1>Hanoi</h1>
+              <h2>{data[0]} properties</h2>
+            </div>
+          </div>
+
+          <div className="featuredItem">
+            <img
+              src="https://i.insider.com/5d5ec2082e22af2954154b84?width=700"
+              alt=""
+              className="featuredImg"
+            />
+            <div className="featuredTitles">
+              <h1>Ho Chi Minh</h1>
+              <h2>{data[1]} properties</h2>
+            </div>
+          </div>
+          <div className="featuredItem">
+            <img
+              src="https://kitaography.com/wp-content/uploads/2015/06/photo-1468242218924-27d5aa058a89.jpg"
+              alt=""
+              className="featuredImg"
+            />
+            <div className="featuredTitles">
+              <h1>Nam Dinh</h1>
+              <h2>{data[2]} properties</h2>
+            </div>
+          </div>
+        </>)}
     </div>
   );
 };
