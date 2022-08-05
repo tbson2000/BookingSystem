@@ -5,13 +5,13 @@ import {verifyAdmin} from "../utils/verifyToken.js"
 const router = express.Router();
 
 //CREATE
-router.post("/:hotelid", verifyAdmin, createSession);
+router.post("/:photographerid", verifyAdmin, createSession);
 
 //UPDATE
 router.put("/:id",verifyAdmin, updatedSession);
 //DELETE
 
-router.delete("/:id/:hotelid",verifyAdmin, deleteSession);
+router.delete("/:id/:photographerid",verifyAdmin, deleteSession);
 //GET
 
 router.get("/:id", getSession);

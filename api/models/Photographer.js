@@ -5,10 +5,21 @@ const PhotographerSchema = new mongoose.Schema({
         type: String,
         required:true
     },
+    primaryType:{
+        type: String,
+        required:true       
+    },
+    secondaryType:{
+        type:String
+    },
     address:{
         type: String,
         required:true
-    },
+    },   
+    city:{
+        type: String,
+        required:true
+    }, 
     photos:{
         type: [String],
     },
@@ -25,7 +36,7 @@ const PhotographerSchema = new mongoose.Schema({
         min:0,
         max:5
     },
-    style:{
+    session:{
         type: [String],
     },
     cheapestPrice:{
