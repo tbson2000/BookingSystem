@@ -23,7 +23,7 @@ const Featured = () => {
 
           <div className="featuredItem">
             <img
-              src="https://i.insider.com/5d5ec2082e22af2954154b84?width=700"
+              src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG8lMjBjaGklMjBtaW5oJTIwY2l0eSUyMHZpZXRuYW18ZW58MHx8MHx8&w=1000&q=80"
               alt=""
               className="featuredImg"
             />
@@ -34,7 +34,7 @@ const Featured = () => {
           </div>
           <div className="featuredItem">
             <img
-              src="https://kitaography.com/wp-content/uploads/2015/06/photo-1468242218924-27d5aa058a89.jpg"
+              src="https://image.vietnamlawmagazine.vn/uploadvietnamlaw/2017/11/3/trang-30jpg17012695.jpg"
               alt=""
               className="featuredImg"
             />

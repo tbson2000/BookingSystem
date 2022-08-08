@@ -111,11 +111,11 @@ export const countByPriType = async (req,res,next) =>{
 
 export const getPhotographerSessions = async (req,res,next)=>{
     try {
-        const photographer = Photographer.findById(req.params.id)
+        const photographer = await Photographer.findById(req.params.id)
         const list = await Promise.all(photographer.sessions.map(session=>{
             return Session.findById(session)
         }))
-        res.status(200).json
+        res.status(200).json(list)
     } catch (err) {
         next(err)
     }

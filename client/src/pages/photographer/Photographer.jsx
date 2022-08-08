@@ -142,7 +142,7 @@ const Photographer = () => {
           <Footer />
         </div>
       )},
-      {openModal && <Book setOpenModal={setOpenModal} photographerId={id}/>}
+      {openModal && <Book setOpen={setOpenModal} photographerId={id}/>}
     </div>
   );
 };

@@ -28,4 +28,5 @@ router.get("/countByCity", countByCity);
 router.get("/countByPriType", countByPriType);
 router.get("/session/:id", getPhotographerSessions);
 
+
 export default router

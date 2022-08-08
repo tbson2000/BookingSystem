@@ -100,7 +100,7 @@ const Header = ({ type }) => {
                   />
                 )}
               </div>
-              <div className="headerSearchItem">
+              {/* <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faPerson} className="headerIcon" />
                 <span
                   onClick={() => setOpenOptions(!openOptions)}
@@ -131,7 +131,7 @@ const Header = ({ type }) => {
                     </div>
                   </div>
                 )}
-              </div>
+              </div> */}
               <div className="headerSearchItem">
                 <button className="headerBtn" onClick={handleSearch}>
                   Search

@@ -9,10 +9,6 @@ const SessionSchema = new mongoose.Schema({
         type: Number,
         required:true,
     },
-    duration:{
-        type: Number,
-        required:true,
-    },
     maxPeople:{
         type: Number,
         required:true,
@@ -21,7 +17,7 @@ const SessionSchema = new mongoose.Schema({
         type: String,
         required:true,
     },
-    sessionInfo:[{name:String, unavailableDates:{type: [Date]}}],
+    sessionInfo:[{number:Number, unavailableDates:{type: [Date]}}],
 },
 {timestamps: true});
 

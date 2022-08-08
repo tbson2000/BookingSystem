@@ -26,6 +26,20 @@ export const createSession = async (req,res,next)=>{
 // UPDATE
 export const updatedSession = async (req,res,next) =>{    
     try {
+        await Session.updateOne(
+            {"sessionInfo._id":req.params.id}, 
+            {$push: {
+                "sessionInfo.$.unavailableDates": req.body.dates
+            }}
+        )
+        res.status(200).json(updatedSession)
+    } catch (err) {
+        next(err);
+    }
+}
+
+export const updatedSessionAvailability = async (req,res,next) =>{    
+    try {
         const updatedSession = await Session.findByIdAndUpdate(
             req.params.id, 
             {$set: req.body},
@@ -35,7 +49,6 @@ export const updatedSession = async (req,res,next) =>{
         next(err);
     }
 }
-
 // DELETE
 export const deleteSession = async (req,res,next) =>{
     const photographerId = req.params.photographerid;

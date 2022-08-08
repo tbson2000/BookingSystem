@@ -9,7 +9,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Book = ({ setOpen, photographerId }) => {
-  const [selectedSchedules, setSelectedSchedules] = useState([]);
+  const [selectedSessions, setSelectedSessions] = useState([]);
   const { data, loading, error } = useFetch(`/photographers/session/${photographerId}`);
   const { dates } = useContext(SearchContext);
 
@@ -31,8 +31,8 @@ const Book = ({ setOpen, photographerId }) => {
 
   const alldates = getDatesInRange(dates[0].startDate, dates[0].endDate);
 
-  const isAvailable = (scheduleNumber) => {
-    const isFound = scheduleNumber.unavailableDates.some((date) =>
+  const isAvailable = (sessionInfo) => {
+    const isFound = sessionInfo.unavailableDates.some((date) =>
       alldates.includes(new Date(date).getTime())
     );
 
@@ -42,10 +42,10 @@ const Book = ({ setOpen, photographerId }) => {
   const handleSelect = (e) => {
     const checked = e.target.checked;
     const value = e.target.value;
-    setSelectedSchedules(
+    setSelectedSessions(
       checked
-        ? [...selectedSchedules, value]
-        : selectedSchedules.filter((item) => item !== value)
+        ? [...selectedSessions, value]
+        : selectedSessions.filter((item) => item !== value)
     );
   };
 
@@ -54,8 +54,8 @@ const Book = ({ setOpen, photographerId }) => {
   const handleClick = async () => {
     try {
       await Promise.all(
-        selectedSchedules.map((scheduleId) => {
-          const res = axios.put(`/schedules/availability/${scheduleId}`, {
+        selectedSessions.map((sessionId) => {
+          const res = axios.put(`/schedules/availability/${sessionId}`, {
             dates: alldates,
           });
           return res.data;
@@ -73,7 +73,7 @@ const Book = ({ setOpen, photographerId }) => {
           className="rClose"
           onClick={() => setOpen(false)}
         />
-        <span>Select your schedules:</span>
+        <span>Select your sessions:</span>
         {data.map((item) => (
           <div className="rItem" key={item._id}>
             <div className="rItemInfo">
@@ -85,14 +85,14 @@ const Book = ({ setOpen, photographerId }) => {
               <div className="rPrice">{item.price}</div>
             </div>
             <div className="rSelectSchedules">
-              {item.scheduleNumbers.map((scheduleNumber) => (
+              {item.sessionInfo.map((sessionInfo) => (
                 <div className="schedule">
-                  <label>{scheduleNumber.number}</label>
+                  <label>{sessionInfo.number}</label>
                   <input
                     type="checkbox"
-                    value={scheduleNumber._id}
+                    value={sessionInfo._id}
                     onChange={handleSelect}
-                    disabled={!isAvailable(scheduleNumber)}
+                    disabled={!isAvailable(sessionInfo)}
                   />
                 </div>
               ))}
