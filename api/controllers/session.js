@@ -26,12 +26,10 @@ export const createSession = async (req,res,next)=>{
 // UPDATE
 export const updatedSession = async (req,res,next) =>{    
     try {
-        await Session.updateOne(
-            {"sessionInfo._id":req.params.id}, 
-            {$push: {
-                "sessionInfo.$.unavailableDates": req.body.dates
-            }}
-        )
+        const updatedSession = await Session.findByIdAndUpdate(
+            req.params.id, 
+            {$set: req.body},
+            {new: true})
         res.status(200).json(updatedSession)
     } catch (err) {
         next(err);
@@ -40,10 +38,12 @@ export const updatedSession = async (req,res,next) =>{
 
 export const updatedSessionAvailability = async (req,res,next) =>{    
     try {
-        const updatedSession = await Session.findByIdAndUpdate(
-            req.params.id, 
-            {$set: req.body},
-            {new: true})
+        await Session.updateOne(
+            {"sessionInfo._id":req.params.id}, 
+            {$push: {
+                "sessionInfo.$.unavailableDates": req.body.dates
+            }}
+        )
         res.status(200).json(updatedSession)
     } catch (err) {
         next(err);

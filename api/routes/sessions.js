@@ -9,7 +9,7 @@ router.post("/:photographerid", verifyAdmin, createSession);
 
 //UPDATE
 router.put("/:id",verifyAdmin, updatedSession);
-router.put("availability/:id", updatedSessionAvailability);
+router.put("/availability/:id", updatedSessionAvailability);
 //DELETE
 
 router.delete("/:id/:photographerid",verifyAdmin, deleteSession);
