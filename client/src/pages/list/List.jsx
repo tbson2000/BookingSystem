@@ -1,12 +1,13 @@
 import "./list.css";
 import Navbar from "../../components/navbar/Navbar";
 import Header from "../../components/header/Header";
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import {SearchItem, SearchItem2, SearchItem3, SearchItem4, SearchItem5, SearchItem6} from "../../components/searchItem/SearchItem";
 import useFetch from "../../hooks/useFetch";
+import { SearchContext } from "../../context/SearchContext";
 
 const List = () => {
   const location = useLocation();
@@ -14,7 +15,9 @@ const List = () => {
   const [dates, setDates] = useState(location.state.dates);
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(location.state.options);
+  const navigate = useNavigate();
 
+  const { dispatch } = useContext(SearchContext);
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
 

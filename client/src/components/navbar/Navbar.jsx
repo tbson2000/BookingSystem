@@ -6,8 +6,14 @@ const Navbar = () => {
   const navigate = useNavigate()
   const { user } = useContext(AuthContext);
 
-  const handleClick = () =>{
+  const handleClick = () => {
     navigate("/login")
+  }
+
+  const handleLogout = () => {
+    localStorage.clear()
+    window.location.reload()
+    navigate("/")
   }
   return (
     <div className="navbar">
@@ -15,15 +21,21 @@ const Navbar = () => {
         <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
           <span className="logo">Photo Session</span>
         </Link>
-        {user ? user.username : (
+        {user ? (
+          < div className="navItems">
+            {user.username}
+            <button onClick={handleLogout} className="navButton">Logout</button>
+          </div>
+        ) : (
           <div className="navItems">
             <button className="navButton">Register</button>
-            <button onClick={handleClick}  className="navButton">Login</button>
+            <button onClick={handleClick} className="navButton">Login</button>
           </div>
-        )}
+        )
+        }
         {/* <span className="logo">Photo Session</span> */}
       </div>
-    </div>
+    </div >
   );
 };
 
