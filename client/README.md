@@ -33,6 +33,7 @@ Optional for BE/database:
 libs to install: express -> add type model in package.json
 
   - yarn install
+  - npx browserslist@latest --update-db
   - yarn add nodemon
   - yarn add dotenv
   - yarn add mongoose
