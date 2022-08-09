@@ -101,7 +101,7 @@ const Photographer = () => {
               <FontAwesomeIcon icon={faLocationDot} />
               <span>{data.address}</span>
             </div>
-            <span className="photographerDistance">
+            <span className="photographerYear">
               {data.primaryType}
             </span>
             <span className="photographerPriceHighlight">

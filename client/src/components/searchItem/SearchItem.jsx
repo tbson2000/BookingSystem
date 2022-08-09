@@ -13,8 +13,8 @@ const SearchItem = ({ item }) => {
 
       <div className="siDesc">
         <h1 className="siTitle">{item.name}</h1>
-        <span className="siDistance">{item.title}d</span>
-        <span className="siTaxiOp">Editors' Choice</span>
+        <span className="siYear">{item.title}d</span>
+        <span className="siHighlight">Editors' Choice</span>
         <span className="siSubtitle">
           34 years of experience
         </span>
@@ -56,8 +56,8 @@ const SearchItem2 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Annie Leibovitz</h1>
-        <span className="siDistance">62 years old</span>
-        <span className="siTaxiOp">Editors' Choice</span>
+        <span className="siYear">62 years old</span>
+        <span className="siHighlight">Editors' Choice</span>
         <span className="siSubtitle">
           36 years of experience
         </span>
@@ -98,7 +98,7 @@ const SearchItem3 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Elliott Erwitt</h1>
-        <span className="siDistance">84 years old</span>
+        <span className="siYear">84 years old</span>
         <span className="siSubtitle">
           56 years of experience
         </span>
@@ -139,7 +139,7 @@ const SearchItem4 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Alicia Isabelle</h1>
-        <span className="siDistance">52 years old</span>
+        <span className="siYear">52 years old</span>
         <span className="siSubtitle">
           34 years of experience
         </span>
@@ -180,7 +180,7 @@ const SearchItem5 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">David Bailey</h1>
-        <span className="siDistance">76 years old</span>
+        <span className="siYear">76 years old</span>
         <span className="siSubtitle">
           47 years of experience
         </span>
@@ -221,7 +221,7 @@ const SearchItem6 = () => {
 
       <div className="siDesc">
         <h1 className="siTitle">Ami Vitale</h1>
-        <span className="siDistance">51 years old</span>
+        <span className="siYear">51 years old</span>
         <span className="siSubtitle">
           29 years of experience
         </span>
