@@ -41,16 +41,18 @@ const Sidebar = () => {
               <span>Customers</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="/photographers" style={{ textDecoration: "none" }}>
             <li>
               <CameraOutlinedIcon className="icon" />
               <span>Photographers</span>
             </li>
           </Link>
+          <Link to="/sessions" style={{ textDecoration: "none" }}>
           <li>
             <PendingActionsOutlinedIcon className="icon" />
             <span>Pending</span>
           </li>
+          </Link>
           <li>
             <EventAvailableOutlinedIcon className="icon" />
             <span>Event</span>

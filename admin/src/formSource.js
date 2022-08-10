@@ -15,13 +15,13 @@ export const userInputs = [
       id: 3,
       label: "Email",
       type: "mail",
-      placeholder: "john_doe@gmail.com",
+      placeholder: "your_email@gmail.com",
     },
     {
       id: 4,
       label: "Phone",
       type: "text",
-      placeholder: "+1 234 567 89",
+      placeholder: "+84 xxx xxx xxx",
     },
     {
       id: 5,
@@ -32,22 +32,22 @@ export const userInputs = [
       id: 6,
       label: "Address",
       type: "text",
-      placeholder: "Elton St. 216 NewYork",
+      placeholder: "Dong Da",
     },
     {
       id: 7,
-      label: "Country",
+      label: "City",
       type: "text",
-      placeholder: "USA",
+      placeholder: "Hanoi",
     },
   ];
   
-  export const productInputs = [
+  export const photographerInputs = [
     {
       id: 1,
-      label: "Title",
+      label: "Name",
       type: "text",
-      placeholder: "Apple Macbook Pro",
+      placeholder: "To Bao Son",
     },
     {
       id: 2,
@@ -57,19 +57,25 @@ export const userInputs = [
     },
     {
       id: 3,
-      label: "Category",
+      label: "Primary Type",
       type: "text",
-      placeholder: "Computers",
+      placeholder: "Family/kid",
     },
     {
       id: 4,
+      label: "Secondary Type",
+      type: "text",
+      placeholder: "Portrait",
+    },
+    {
+      id: 5,
       label: "Price",
       type: "text",
       placeholder: "100",
     },
     {
-      id: 5,
-      label: "Stock",
+      id: 6,
+      label: "Title",
       type: "text",
       placeholder: "in stock",
     },

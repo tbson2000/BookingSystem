@@ -18,6 +18,7 @@ const List = () => {
   const navigate = useNavigate();
 
   const { dispatch } = useContext(SearchContext);
+
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
 
@@ -26,7 +27,13 @@ const List = () => {
   );
 
   const handleClick = () => {
-    reFetch();
+    if (!destination){
+      dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
+      window.location.reload()
+      navigate("/photographers", { state: { destination, dates, options } });
+    } else {
+      reFetch();
+    }
   };
 
   return (

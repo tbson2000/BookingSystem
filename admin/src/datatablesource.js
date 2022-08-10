@@ -7,7 +7,7 @@ export const userColumns = [
     renderCell: (params) => {
       return (
         <div className="cellWithImg">
-          <img className="cellImg" src={params.row.img} alt="avatar" />
+          <img className="cellImg" src={params.row.img || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShVd_20HhA_aVfotbJpDwd9JNOJHePKlsj7htyOZGj8A&s"} alt="avatar" />
           {params.row.username}
         </div>
       );
@@ -20,104 +20,86 @@ export const userColumns = [
   },
 
   {
-    field: "age",
-    headerName: "Age",
+    field: "district",
+    headerName: "District",
+    width: 100,
+  },
+
+  {
+    field: "city",
+    headerName: "City",
+    width: 100,
+  },
+
+  {
+    field: "phone",
+    headerName: "Phone",
+    width: 100,
+  },
+
+  // {
+  //   field: "status",
+  //   headerName: "Status",
+  //   width: 160,
+  //   renderCell: (params) => {
+  //     return (
+  //       <div className={`cellWithStatus ${params.row.status}`}>
+  //         {params.row.status}
+  //       </div>
+  //     );
+  //   },
+  // },
+];
+
+export const photographerlColumns = [
+  { field: "_id", headerName: "ID", width: 250 },
+  {
+    field: "name",
+    headerName: "Name",
+    width: 150,
+  },
+  {
+    field: "primaryType",
+    headerName: "Primary Type",
+    width: 200,
+  },
+  {
+    field: "secondaryType",
+    headerName: "Secondary Type",
+    width: 200,
+  },
+  {
+    field: "title",
+    headerName: "Title",
     width: 100,
   },
   {
-    field: "status",
-    headerName: "Status",
-    width: 160,
-    renderCell: (params) => {
-      return (
-        <div className={`cellWithStatus ${params.row.status}`}>
-          {params.row.status}
-        </div>
-      );
-    },
+    field: "city",
+    headerName: "City",
+    width: 100,
   },
 ];
 
-//temporary data
-export const userRows = [
+export const sessionColumns = [
+  { field: "_id", headerName: "ID", width: 70 },
   {
-    id: 1,
-    username: "Snow",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    status: "active",
-    email: "1snow@gmail.com",
-    age: 35,
+    field: "title",
+    headerName: "Title",
+    width: 230,
   },
   {
-    id: 2,
-    username: "Jamie Lannister",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "2snow@gmail.com",
-    status: "passive",
-    age: 42,
+    field: "desc",
+    headerName: "Description",
+    width: 200,
   },
   {
-    id: 3,
-    username: "Lannister",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "3snow@gmail.com",
-    status: "pending",
-    age: 45,
+    field: "price",
+    headerName: "Price",
+    width: 100,
   },
   {
-    id: 4,
-    username: "Stark",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "4snow@gmail.com",
-    status: "active",
-    age: 16,
-  },
-  {
-    id: 5,
-    username: "Targaryen",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "5snow@gmail.com",
-    status: "passive",
-    age: 22,
-  },
-  {
-    id: 6,
-    username: "Melisandre",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "6snow@gmail.com",
-    status: "active",
-    age: 15,
-  },
-  {
-    id: 7,
-    username: "Clifford",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "7snow@gmail.com",
-    status: "passive",
-    age: 44,
-  },
-  {
-    id: 8,
-    username: "Frances",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "8snow@gmail.com",
-    status: "active",
-    age: 36,
-  },
-  {
-    id: 9,
-    username: "Roxie",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "snow@gmail.com",
-    status: "pending",
-    age: 65,
-  },
-  {
-    id: 10,
-    username: "Roxie",
-    img: "https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514204?k=20&m=1201514204&s=612x612&w=0&h=5404qm1GUfoty4aStYBUFAiCCHwxMy5y3z6cFuV-Qnw=",
-    email: "snow@gmail.com",
-    status: "active",
-    age: 65,
+    field: "maxPeople",
+    headerName: "Max People",
+    width: 100,
   },
 ];
