@@ -13,12 +13,12 @@ const SearchItem = ({ item }) => {
 
       <div className="siDesc">
         <h1 className="siTitle">{item.name}</h1>
-        <span className="siYear">{item.title}d</span>
+        <span className="siYear">{item.title}</span>
         <span className="siHighlight">Editors' Choice</span>
         <span className="siSubtitle">
           34 years of experience
         </span>
-        <span className="siFeatures">{item.desc}</span>
+        {/* <span className="siFeatures">{item.desc}</span> */}
         <span className="siCancelOp">Free cancellation </span>
         <span className="siCancelOpSubtitle">
           You can cancel later, so lock in this great price today!

@@ -15,6 +15,11 @@ import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
 
+const handleLogout = () => {
+  localStorage.clear()
+  window.location.reload()
+}
+
 const Sidebar = () => {
   const { dispatch } = useContext(DarkModeContext);
   return (
@@ -47,7 +52,7 @@ const Sidebar = () => {
               <span>Photographers</span>
             </li>
           </Link>
-          <Link to="/sessions" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
           <li>
             <PendingActionsOutlinedIcon className="icon" />
             <span>Pending</span>
@@ -86,19 +91,19 @@ const Sidebar = () => {
           </li>
           <li>
             <ExitToAppIcon className="icon" />
-            <span>Logout</span>
+            <span onClick={handleLogout}>Logout</span>
           </li>
         </ul>
       </div>
       <div className="bottom">
-        <div
+        {/* <div
           className="colorOption"
           onClick={() => dispatch({ type: "LIGHT" })}
         ></div>
         <div
           className="colorOption"
           onClick={() => dispatch({ type: "DARK" })}
-        ></div>
+        ></div> */}
       </div>
     </div>
   );

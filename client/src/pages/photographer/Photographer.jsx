@@ -132,7 +132,7 @@ const Photographer = () => {
                   Many years of shooting in multiple styple. This photographer will give you the best experiences.
                 </span>
                 <h2>
-                  <b>${days * data.cheapestPrice * options.session}</b> <br /> ({days} day "hours"-any style)
+                  <b>${days * data.cheapestPrice * options.session}</b> <br /> ({days} day - any style)
                 </h2>
                 <button onClick={handleClick}>Book Now!</button>
               </div>
